@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🛡️ Phishing Detector</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>🛡️ Real-Time Phishing Detection System</h1>
+    <p>Analyze emails and URLs for phishing threats instantly.</p>
+
+    <div class="input-section">
+      <h2>📧 Email Content</h2>
+      <textarea id="emailContent" placeholder="Paste suspicious email text..."></textarea>
+    </div>
+
+    <div class="input-section">
+      <h2>🌐 URL</h2>
+      <input type="text" id="url" placeholder="https://example.com" />
+    </div>
+
+    <button onclick="analyze()">🔍 Analyze Now</button>
+
+    <div id="results"></div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
